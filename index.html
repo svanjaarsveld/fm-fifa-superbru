@@ -27,8 +27,8 @@ body{font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--tex
 #left{display:flex;flex-direction:column;background:#29779b;min-height:0;}
 #fix-panel{flex:1.1;display:flex;flex-direction:column;border-bottom:1px solid rgba(0,0,0,0.15);min-height:0;}
 #res-panel{flex:.9;display:flex;flex-direction:column;min-height:0;}
-#mid{background:#e8f2f7;display:flex;flex-direction:column;min-height:0;}
-#right{background:#e8f2f7;display:flex;flex-direction:column;min-height:0;}
+#mid{background:#29779b;display:flex;flex-direction:column;min-height:0;}
+#right{background:#29779b;display:flex;flex-direction:column;min-height:0;}
 .ph{display:flex;align-items:center;gap:8px;padding:11px 16px;border-bottom:none;background:#1b2026;flex-shrink:0;padding:13px 16px;}
 .ph h2{font-size:22px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#fff;}
 .pill{margin-left:auto;font-size:9px;font-weight:700;letter-spacing:.08em;background:rgba(245,183,94,.12);color:var(--orange);border:1px solid rgba(245,183,94,.3);border-radius:3px;padding:2px 6px;text-transform:uppercase;}
@@ -36,23 +36,22 @@ body{font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--tex
 .pb::-webkit-scrollbar{width:3px;}
 .pb::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.3);border-radius:2px;}
 .dlabel{font-size:8px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#fff;padding:4px 8px;border-radius:4px;position:sticky;top:2px;background:#2e3d4f;z-index:1;margin:6px 6px 3px 6px;display:block;}
-.fx{display:grid;grid-template-columns:36px 1fr 62px 1fr 80px;align-items:center;padding:5px 8px;border-bottom:1px solid rgba(255,255,255,0.15);gap:4px;}
-.fx:last-child{border-bottom:none;}
+.fx{display:grid;grid-template-columns:36px 1fr 62px 1fr 80px;align-items:center;padding:6px 8px;gap:4px;background:#fff;border-radius:3px;margin:0 8px 4px 8px;}
 .fx-home{text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;}
 .fx-away{text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;}
-.fx-grp-col{font-size:7px;font-weight:700;color:rgba(255,255,255,0.95);text-align:left;white-space:nowrap;background:rgba(0,0,0,0.15);border-radius:3px;padding:1px 3px;}
-.fx-venue-col{font-size:7px;color:rgba(255,255,255,0.8);text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-style:italic;}
+.fx-grp-col{font-size:7px;font-weight:700;color:#fff;text-align:left;white-space:nowrap;background:#29779b;border-radius:3px;padding:1px 3px;}
+.fx-venue-col{font-size:7px;color:#6b7280;text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-style:italic;}
 .fx-flag{font-size:11px;display:block;line-height:1;}.fx-flag img{width:16px!important;height:12px!important;display:block!important;border-radius:2px;}
-.fx-name{font-size:8px;font-weight:600;color:#fff;display:block;}
-.fx-grp{font-size:9px;color:rgba(255,255,255,0.6);display:block;}
+.fx-name{font-size:8px;font-weight:600;color:#1a1a1a;display:block;}
+.fx-grp{font-size:9px;color:#6b7280;display:block;}
 .fx-mid{text-align:center;display:flex;flex-direction:column;align-items:center;}
-.fx-score{display:inline-block;background:#fff;border:1px solid #29779b;border-radius:3px;padding:1px 4px;font-size:8px;font-weight:700;color:#1b2026;font-variant-numeric:tabular-nums;white-space:nowrap;}
-.fx-score.live{border-color:var(--orange);color:var(--orange);}
-.fx-time{font-size:7px;color:rgba(255,255,255,0.75);display:block;margin-top:1px;font-weight:600;letter-spacing:.05em;}
-.fx-time.lt{color:var(--orange);}
+.fx-score{display:inline-block;background:#eef0f3;border:1px solid #29779b;border-radius:3px;padding:1px 4px;font-size:8px;font-weight:700;color:#1b2026;font-variant-numeric:tabular-nums;white-space:nowrap;}
+.fx-score.live{border-color:var(--orange);color:#c98a1e;}
+.fx-time{font-size:7px;color:#6b7280;display:block;margin-top:1px;font-weight:600;letter-spacing:.05em;}
+.fx-time.lt{color:#c98a1e;}
 
-.fx-sa{background:rgba(255,220,100,0.18);border-left:3px solid #f5b75e;}
-.sa-name{color:#f5e87a!important;font-weight:700!important;}
+.fx-sa{background:#fff8e6;border-left:3px solid #f5b75e;}
+.sa-name{color:#a8702f!important;font-weight:700!important;}
 
 /* GROUP TABLES */
 .grp-grid{display:grid;grid-template-columns:1fr 1fr;gap:5px;padding:6px 8px;background:#29779b;}
@@ -67,20 +66,18 @@ body{font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--tex
 .grp-box tr.q2 td:first-child{border-left:3px solid #2d9e45;}
 .pts{font-weight:700;color:#29779b;}
 
-/* LEADERBOARD */
-.lb-hdr{display:grid;grid-template-columns:28px 1fr 36px 36px 36px 40px;align-items:center;gap:4px;padding:5px 10px;border-bottom:1px solid rgba(255,255,255,0.12);}
-.lb-hdr span{font-size:8px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);text-align:center;}
-.lb-hdr span:nth-child(2){text-align:left;}
-.lb{display:grid;grid-template-columns:24px 1fr 32px 32px 32px 36px;align-items:center;gap:3px;padding:3px 8px;border-bottom:1px solid var(--border);}
-.lb:last-child{border-bottom:none;}
-.lb.top1{background:rgba(245,183,94,.05);}
-.lb-rank{font-size:9px;font-weight:700;color:var(--muted);text-align:center;}
-.lb-rank.g{color:var(--orange);font-size:10px;}
-.lb-rank.s{color:#c8c8c8;}
-.lb-rank.b{color:#cd7f32;}
-.lb-name{font-size:9px;font-weight:600;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-.lb-cell{font-size:9px;font-weight:600;text-align:center;color:var(--text);}
-.lb-pts-cell{font-size:9px;font-weight:700;color:var(--orange);text-align:center;font-variant-numeric:tabular-nums;}
+/* POOL LEADERBOARD */
+.lb-wrap{padding:6px 8px;}
+.lb{display:grid;grid-template-columns:24px 22px 1fr 44px;align-items:center;gap:8px;padding:5px 8px;background:#fff;border-radius:3px;margin-bottom:3px;}
+.lb.top1{background:#fff;border-left:3px solid #f5b75e;}
+.lb-rank{font-size:10px;font-weight:700;color:#6b7280;text-align:center;}
+.lb-rank.g{color:#c98a1e;font-size:12px;}
+.lb-rank.s{color:#8a8a8a;}
+.lb-rank.b{color:#a8702f;}
+.lb-flag{width:20px;height:14px;display:flex;align-items:center;justify-content:center;background:#eef0f3;border-radius:2px;overflow:hidden;}
+.lb-flag img{width:20px!important;height:14px!important;display:block!important;object-fit:cover;}
+.lb-name{font-size:10px;font-weight:700;color:#1a1a1a;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.lb-pts-cell{font-size:10px;font-weight:700;color:#29779b;text-align:right;font-variant-numeric:tabular-nums;}
 
 #widget-wrap{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:16px;}
 .widget-hint{font-size:11px;color:var(--muted);text-align:center;line-height:1.7;max-width:200px;}
@@ -132,9 +129,11 @@ body{font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--tex
   </div>
 
   <div id="right">
-    <div style="flex:1;min-height:0;overflow:hidden;">
-      <iframe src="https://www.superbru.com/external/widget.php?iframe=1&p=13225035" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto" style="width:100%;height:100%;border:none;display:block;"></iframe>
+    <div class="ph">
+      <span style="font-size:16px;line-height:1">🏆</span>
+      <h2>FM Office Pool</h2>
     </div>
+    <div class="pb" id="pool-lb-list"></div>
   </div>
 </div>
 
@@ -151,154 +150,193 @@ const REFRESH_MS=60000;
 
 // UTC kick-offs -- all times verified, SAST = UTC+2
 const FIXTURES=[
-  // Group A
-  {utc:'2026-06-11T22:00:00Z',h:'Mexico',     hf:'<img src="https://flagcdn.com/20x15/mx.png" width="20" height="15" style="border-radius:2px;display:block;" alt="mx">',a:'South Africa', af:'<img src="https://flagcdn.com/20x15/za.png" width="20" height="15" style="border-radius:2px;display:block;" alt="za">',s:'F',sc:'2 - 0',g:'A',v:'Estadio Azteca, MEX'},
-  {utc:'2026-06-11T22:00:00Z',h:'South Korea',hf:'<img src="https://flagcdn.com/20x15/kr.png" width="20" height="15" style="border-radius:2px;display:block;" alt="kr">',a:'Czechia',      af:'<img src="https://flagcdn.com/20x15/cz.png" width="20" height="15" style="border-radius:2px;display:block;" alt="cz">',s:'F',sc:'2 - 1',g:'A',v:'AT&T Stadium, TX'},
-  {utc:'2026-06-18T16:00:00Z',h:'Czechia',    hf:'<img src="https://flagcdn.com/20x15/cz.png" width="20" height="15" style="border-radius:2px;display:block;" alt="cz">',a:'South Africa', af:'<img src="https://flagcdn.com/20x15/za.png" width="20" height="15" style="border-radius:2px;display:block;" alt="za">',s:'S',sc:'vs',g:'A',v:'Mercedes-Benz, ATL'},
-  {utc:'2026-06-19T01:00:00Z',h:'Mexico',     hf:'<img src="https://flagcdn.com/20x15/mx.png" width="20" height="15" style="border-radius:2px;display:block;" alt="mx">',a:'South Korea',  af:'<img src="https://flagcdn.com/20x15/kr.png" width="20" height="15" style="border-radius:2px;display:block;" alt="kr">',s:'S',sc:'vs',g:'A',v:'Estadio Akron, MEX'},
-  {utc:'2026-06-25T01:00:00Z',h:'Czechia',    hf:'<img src="https://flagcdn.com/20x15/cz.png" width="20" height="15" style="border-radius:2px;display:block;" alt="cz">',a:'Mexico',       af:'<img src="https://flagcdn.com/20x15/mx.png" width="20" height="15" style="border-radius:2px;display:block;" alt="mx">',s:'S',sc:'vs',g:'A',v:'Estadio Azteca, MEX'},
-  {utc:'2026-06-25T01:00:00Z',h:'South Africa',hf:'<img src="https://flagcdn.com/20x15/za.png" width="20" height="15" style="border-radius:2px;display:block;" alt="za">',a:'South Korea', af:'<img src="https://flagcdn.com/20x15/kr.png" width="20" height="15" style="border-radius:2px;display:block;" alt="kr">',s:'S',sc:'vs',g:'A',v:'Estadio BBVA, MEX'},
-  // Group B
-  {utc:'2026-06-12T17:00:00Z',h:'Canada',     hf:'<img src="https://flagcdn.com/20x15/ca.png" width="20" height="15" style="border-radius:2px;display:block;" alt="ca">',a:'Bosnia-Herz',  af:'<img src="https://flagcdn.com/20x15/ba.png" width="20" height="15" style="border-radius:2px;display:block;" alt="ba">',s:'F',sc:'1 - 1',g:'B',v:'BMO Field, TOR'},
-  {utc:'2026-06-12T20:00:00Z',h:'Switzerland',hf:'<img src="https://flagcdn.com/20x15/ch.png" width="20" height="15" style="border-radius:2px;display:block;" alt="ch">',a:'Qatar',        af:'<img src="https://flagcdn.com/20x15/qa.png" width="20" height="15" style="border-radius:2px;display:block;" alt="qa">',s:'F',sc:'3 - 0',g:'B',v:'Levi\'s, SF'},
-  {utc:'2026-06-18T16:00:00Z',h:'Canada',     hf:'<img src="https://flagcdn.com/20x15/ca.png" width="20" height="15" style="border-radius:2px;display:block;" alt="ca">',a:'Qatar',        af:'<img src="https://flagcdn.com/20x15/qa.png" width="20" height="15" style="border-radius:2px;display:block;" alt="qa">',s:'S',sc:'vs',g:'B',v:'BMO Field, TOR'},
-  {utc:'2026-06-18T19:00:00Z',h:'Bosnia-Herz',hf:'<img src="https://flagcdn.com/20x15/ba.png" width="20" height="15" style="border-radius:2px;display:block;" alt="ba">',a:'Switzerland',  af:'<img src="https://flagcdn.com/20x15/ch.png" width="20" height="15" style="border-radius:2px;display:block;" alt="ch">',s:'S',sc:'vs',g:'B',v:'SoFi Stadium, LA'},
-  // Group C
-  {utc:'2026-06-13T20:00:00Z',h:'Brazil',     hf:'<img src="https://flagcdn.com/20x15/br.png" width="20" height="15" style="border-radius:2px;display:block;" alt="br">',a:'Morocco',      af:'<img src="https://flagcdn.com/20x15/ma.png" width="20" height="15" style="border-radius:2px;display:block;" alt="ma">',s:'F',sc:'1 - 1',g:'C',v:'MetLife, NJ'},
-  {utc:'2026-06-13T23:00:00Z',h:'Scotland',   hf:'<img src="https://flagcdn.com/20x15/gb-sct.png" width="20" height="15" style="border-radius:2px;display:block;" alt="gb-sct">',a:'Haiti',  af:'<img src="https://flagcdn.com/20x15/ht.png" width="20" height="15" style="border-radius:2px;display:block;" alt="ht">',s:'F',sc:'1 - 0',g:'C',v:'AT&T Stadium, TX'},
-  {utc:'2026-06-19T22:00:00Z',h:'Scotland',   hf:'<img src="https://flagcdn.com/20x15/gb-sct.png" width="20" height="15" style="border-radius:2px;display:block;" alt="gb-sct">',a:'Morocco', af:'<img src="https://flagcdn.com/20x15/ma.png" width="20" height="15" style="border-radius:2px;display:block;" alt="ma">',s:'S',sc:'vs',g:'C',v:'Gillette, BOS'},
-  {utc:'2026-06-20T01:00:00Z',h:'Brazil',     hf:'<img src="https://flagcdn.com/20x15/br.png" width="20" height="15" style="border-radius:2px;display:block;" alt="br">',a:'Haiti',        af:'<img src="https://flagcdn.com/20x15/ht.png" width="20" height="15" style="border-radius:2px;display:block;" alt="ht">',s:'S',sc:'vs',g:'C',v:'Rose Bowl, LA'},
-  // Group D
-  {utc:'2026-06-12T23:00:00Z',h:'USA',        hf:'<img src="https://flagcdn.com/20x15/us.png" width="20" height="15" style="border-radius:2px;display:block;" alt="us">',a:'Paraguay',     af:'<img src="https://flagcdn.com/20x15/py.png" width="20" height="15" style="border-radius:2px;display:block;" alt="py">',s:'F',sc:'4 - 1',g:'D',v:'SoFi Stadium, LA'},
-  {utc:'2026-06-13T03:00:00Z',h:'Australia',  hf:'<img src="https://flagcdn.com/20x15/au.png" width="20" height="15" style="border-radius:2px;display:block;" alt="au">',a:'Turkiye',      af:'<img src="https://flagcdn.com/20x15/tr.png" width="20" height="15" style="border-radius:2px;display:block;" alt="tr">',s:'F',sc:'2 - 0',g:'D',v:'BC Place, VAN'},
-  {utc:'2026-06-19T19:00:00Z',h:'USA',        hf:'<img src="https://flagcdn.com/20x15/us.png" width="20" height="15" style="border-radius:2px;display:block;" alt="us">',a:'Australia',    af:'<img src="https://flagcdn.com/20x15/au.png" width="20" height="15" style="border-radius:2px;display:block;" alt="au">',s:'S',sc:'vs',g:'D',v:'Lumen Field, SEA'},
-  {utc:'2026-06-20T04:00:00Z',h:'Turkiye',    hf:'<img src="https://flagcdn.com/20x15/tr.png" width="20" height="15" style="border-radius:2px;display:block;" alt="tr">',a:'Paraguay',     af:'<img src="https://flagcdn.com/20x15/py.png" width="20" height="15" style="border-radius:2px;display:block;" alt="py">',s:'S',sc:'vs',g:'D',v:'Arrowhead, KC'},
-  // Group E
-  {utc:'2026-06-14T17:00:00Z',h:'Germany',    hf:'<img src="https://flagcdn.com/20x15/de.png" width="20" height="15" style="border-radius:2px;display:block;" alt="de">',a:'Curacao',      af:'<img src="https://flagcdn.com/20x15/cw.png" width="20" height="15" style="border-radius:2px;display:block;" alt="cw">',s:'F',sc:'7 - 1',g:'E',v:'NRG Stadium, TX'},
-  {utc:'2026-06-14T20:00:00Z',h:"Cote d'Ivoire",hf:'<img src="https://flagcdn.com/20x15/ci.png" width="20" height="15" style="border-radius:2px;display:block;" alt="ci">',a:'Ecuador',   af:'<img src="https://flagcdn.com/20x15/ec.png" width="20" height="15" style="border-radius:2px;display:block;" alt="ec">',s:'F',sc:'1 - 0',g:'E',v:'Rose Bowl, LA'},
-  {utc:'2026-06-20T20:00:00Z',h:'Germany',    hf:'<img src="https://flagcdn.com/20x15/de.png" width="20" height="15" style="border-radius:2px;display:block;" alt="de">',a:"Cote d'Ivoire",af:'<img src="https://flagcdn.com/20x15/ci.png" width="20" height="15" style="border-radius:2px;display:block;" alt="ci">',s:'S',sc:'vs',g:'E',v:'Gillette, BOS'},
-  {utc:'2026-06-21T00:00:00Z',h:'Ecuador',    hf:'<img src="https://flagcdn.com/20x15/ec.png" width="20" height="15" style="border-radius:2px;display:block;" alt="ec">',a:'Curacao',      af:'<img src="https://flagcdn.com/20x15/cw.png" width="20" height="15" style="border-radius:2px;display:block;" alt="cw">',s:'S',sc:'vs',g:'E',v:'Arrowhead, KC'},
-  // Group F
-  {utc:'2026-06-14T20:00:00Z',h:'Netherlands',hf:'<img src="https://flagcdn.com/20x15/nl.png" width="20" height="15" style="border-radius:2px;display:block;" alt="nl">',a:'Japan',        af:'<img src="https://flagcdn.com/20x15/jp.png" width="20" height="15" style="border-radius:2px;display:block;" alt="jp">',s:'F',sc:'2 - 2',g:'F',v:'AT&T Stadium, TX'},
-  {utc:'2026-06-14T23:00:00Z',h:'Sweden',     hf:'<img src="https://flagcdn.com/20x15/se.png" width="20" height="15" style="border-radius:2px;display:block;" alt="se">',a:'Tunisia',      af:'<img src="https://flagcdn.com/20x15/tn.png" width="20" height="15" style="border-radius:2px;display:block;" alt="tn">',s:'F',sc:'5 - 1',g:'F',v:'Arrowhead, KC'},
-  {utc:'2026-06-20T17:00:00Z',h:'Netherlands',hf:'<img src="https://flagcdn.com/20x15/nl.png" width="20" height="15" style="border-radius:2px;display:block;" alt="nl">',a:'Sweden',       af:'<img src="https://flagcdn.com/20x15/se.png" width="20" height="15" style="border-radius:2px;display:block;" alt="se">',s:'S',sc:'vs',g:'F',v:'Levi\'s, SF'},
-  {utc:'2026-06-21T04:00:00Z',h:'Tunisia',    hf:'<img src="https://flagcdn.com/20x15/tn.png" width="20" height="15" style="border-radius:2px;display:block;" alt="tn">',a:'Japan',        af:'<img src="https://flagcdn.com/20x15/jp.png" width="20" height="15" style="border-radius:2px;display:block;" alt="jp">',s:'S',sc:'vs',g:'F',v:'SoFi Stadium, LA'},
-  // Group G
-  {utc:'2026-06-15T19:00:00Z',h:'Belgium',    hf:'<img src="https://flagcdn.com/20x15/be.png" width="20" height="15" style="border-radius:2px;display:block;" alt="be">',a:'Egypt',        af:'<img src="https://flagcdn.com/20x15/eg.png" width="20" height="15" style="border-radius:2px;display:block;" alt="eg">',s:'S',sc:'vs',g:'G',v:'Gillette, BOS'},
-  {utc:'2026-06-16T01:00:00Z',h:'Iran',       hf:'<img src="https://flagcdn.com/20x15/ir.png" width="20" height="15" style="border-radius:2px;display:block;" alt="ir">',a:'New Zealand',  af:'<img src="https://flagcdn.com/20x15/nz.png" width="20" height="15" style="border-radius:2px;display:block;" alt="nz">',s:'S',sc:'vs',g:'G',v:'Mile High, DEN'},
-  // Group H
-  {utc:'2026-06-15T19:00:00Z',h:'Spain',      hf:'<img src="https://flagcdn.com/20x15/es.png" width="20" height="15" style="border-radius:2px;display:block;" alt="es">',a:'Cabo Verde',   af:'<img src="https://flagcdn.com/20x15/cv.png" width="20" height="15" style="border-radius:2px;display:block;" alt="cv">',s:'S',sc:'vs',g:'H',v:'SoFi Stadium, LA'},
-  {utc:'2026-06-16T01:00:00Z',h:'Saudi Arabia',hf:'<img src="https://flagcdn.com/20x15/sa.png" width="20" height="15" style="border-radius:2px;display:block;" alt="sa">',a:'Uruguay',     af:'<img src="https://flagcdn.com/20x15/uy.png" width="20" height="15" style="border-radius:2px;display:block;" alt="uy">',s:'S',sc:'vs',g:'H',v:'Hard Rock, MIA'},
-  // Group I
-  {utc:'2026-06-16T19:00:00Z',h:'France',     hf:'<img src="https://flagcdn.com/20x15/fr.png" width="20" height="15" style="border-radius:2px;display:block;" alt="fr">',a:'Senegal',      af:'<img src="https://flagcdn.com/20x15/sn.png" width="20" height="15" style="border-radius:2px;display:block;" alt="sn">',s:'S',sc:'vs',g:'I',v:'MetLife, NJ'},
-  {utc:'2026-06-17T01:00:00Z',h:'Norway',     hf:'<img src="https://flagcdn.com/20x15/no.png" width="20" height="15" style="border-radius:2px;display:block;" alt="no">',a:'Iraq',         af:'<img src="https://flagcdn.com/20x15/iq.png" width="20" height="15" style="border-radius:2px;display:block;" alt="iq">',s:'S',sc:'vs',g:'I',v:'NRG Stadium, TX'},
-  // Group J
-  {utc:'2026-06-16T22:00:00Z',h:'Argentina',  hf:'<img src="https://flagcdn.com/20x15/ar.png" width="20" height="15" style="border-radius:2px;display:block;" alt="ar">',a:'Algeria',      af:'<img src="https://flagcdn.com/20x15/dz.png" width="20" height="15" style="border-radius:2px;display:block;" alt="dz">',s:'S',sc:'vs',g:'J',v:'Mercedes-Benz, ATL'},
-  {utc:'2026-06-17T01:00:00Z',h:'Austria',    hf:'<img src="https://flagcdn.com/20x15/at.png" width="20" height="15" style="border-radius:2px;display:block;" alt="at">',a:'Jordan',       af:'<img src="https://flagcdn.com/20x15/jo.png" width="20" height="15" style="border-radius:2px;display:block;" alt="jo">',s:'S',sc:'vs',g:'J',v:'Rose Bowl, LA'},
-  // Group K
-  {utc:'2026-06-17T19:00:00Z',h:'Portugal',   hf:'<img src="https://flagcdn.com/20x15/pt.png" width="20" height="15" style="border-radius:2px;display:block;" alt="pt">',a:'DR Congo',     af:'<img src="https://flagcdn.com/20x15/cd.png" width="20" height="15" style="border-radius:2px;display:block;" alt="cd">',s:'S',sc:'vs',g:'K',v:'Gillette, BOS'},
-  {utc:'2026-06-18T01:00:00Z',h:'Colombia',   hf:'<img src="https://flagcdn.com/20x15/co.png" width="20" height="15" style="border-radius:2px;display:block;" alt="co">',a:'Uzbekistan',   af:'<img src="https://flagcdn.com/20x15/uz.png" width="20" height="15" style="border-radius:2px;display:block;" alt="uz">',s:'S',sc:'vs',g:'K',v:'Lumen Field, SEA'},
-  // Group L
-  {utc:'2026-06-17T22:00:00Z',h:'England',    hf:'<img src="https://flagcdn.com/20x15/gb-eng.png" width="20" height="15" style="border-radius:2px;display:block;" alt="gb-eng">',a:'Croatia', af:'<img src="https://flagcdn.com/20x15/hr.png" width="20" height="15" style="border-radius:2px;display:block;" alt="hr">',s:'S',sc:'vs',g:'L',v:'Hard Rock, MIA'},
-  {utc:'2026-06-18T01:00:00Z',h:'Ghana',      hf:'<img src="https://flagcdn.com/20x15/gh.png" width="20" height="15" style="border-radius:2px;display:block;" alt="gh">',a:'Panama',       af:'<img src="https://flagcdn.com/20x15/pa.png" width="20" height="15" style="border-radius:2px;display:block;" alt="pa">',s:'S',sc:'vs',g:'L',v:'AT&T Stadium, TX'},
+  // GROUP A
+  {utc:'2026-06-11T22:00:00Z',h:'Mexico',      hf:'<img src="https://flagcdn.com/16x12/mx.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="mx">',a:'South Africa', af:'<img src="https://flagcdn.com/16x12/za.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="za">',s:'F',sc:'2 - 0',g:'A',v:'Estadio Azteca, MEX'},
+  {utc:'2026-06-11T22:00:00Z',h:'South Korea', hf:'<img src="https://flagcdn.com/16x12/kr.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="kr">',a:'Czechia',       af:'<img src="https://flagcdn.com/16x12/cz.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="cz">',s:'F',sc:'2 - 1',g:'A',v:'AT&T Stadium, TX'},
+  {utc:'2026-06-18T16:00:00Z',h:'Czechia',     hf:'<img src="https://flagcdn.com/16x12/cz.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="cz">',a:'South Africa',  af:'<img src="https://flagcdn.com/16x12/za.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="za">',s:'S',sc:'vs',g:'A',v:'Mercedes-Benz, ATL'},
+  {utc:'2026-06-19T01:00:00Z',h:'Mexico',      hf:'<img src="https://flagcdn.com/16x12/mx.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="mx">',a:'South Korea',   af:'<img src="https://flagcdn.com/16x12/kr.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="kr">',s:'S',sc:'vs',g:'A',v:'Estadio Akron, MEX'},
+  {utc:'2026-06-25T01:00:00Z',h:'Czechia',     hf:'<img src="https://flagcdn.com/16x12/cz.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="cz">',a:'Mexico',        af:'<img src="https://flagcdn.com/16x12/mx.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="mx">',s:'S',sc:'vs',g:'A',v:'Estadio Azteca, MEX'},
+  {utc:'2026-06-25T01:00:00Z',h:'South Africa',hf:'<img src="https://flagcdn.com/16x12/za.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="za">',a:'South Korea',   af:'<img src="https://flagcdn.com/16x12/kr.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="kr">',s:'S',sc:'vs',g:'A',v:'Estadio BBVA, MEX'},
+  // GROUP B
+  {utc:'2026-06-12T17:00:00Z',h:'Canada',      hf:'<img src="https://flagcdn.com/16x12/ca.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="ca">',a:'Bosnia-Herz',   af:'<img src="https://flagcdn.com/16x12/ba.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="ba">',s:'F',sc:'1 - 1',g:'B',v:'BMO Field, TOR'},
+  {utc:'2026-06-12T20:00:00Z',h:'Switzerland', hf:'<img src="https://flagcdn.com/16x12/ch.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="ch">',a:'Qatar',          af:'<img src="https://flagcdn.com/16x12/qa.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="qa">',s:'F',sc:'3 - 0',g:'B',v:"Levi's, SF"},
+  {utc:'2026-06-18T19:00:00Z',h:'Canada',      hf:'<img src="https://flagcdn.com/16x12/ca.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="ca">',a:'Qatar',          af:'<img src="https://flagcdn.com/16x12/qa.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="qa">',s:'S',sc:'vs',g:'B',v:'BMO Field, TOR'},
+  {utc:'2026-06-19T01:00:00Z',h:'Bosnia-Herz', hf:'<img src="https://flagcdn.com/16x12/ba.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="ba">',a:'Switzerland',   af:'<img src="https://flagcdn.com/16x12/ch.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="ch">',s:'S',sc:'vs',g:'B',v:'SoFi Stadium, LA'},
+  {utc:'2026-06-24T01:00:00Z',h:'Qatar',       hf:'<img src="https://flagcdn.com/16x12/qa.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="qa">',a:'Bosnia-Herz',   af:'<img src="https://flagcdn.com/16x12/ba.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="ba">',s:'S',sc:'vs',g:'B',v:'Rose Bowl, LA'},
+  {utc:'2026-06-24T01:00:00Z',h:'Switzerland', hf:'<img src="https://flagcdn.com/16x12/ch.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="ch">',a:'Canada',         af:'<img src="https://flagcdn.com/16x12/ca.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="ca">',s:'S',sc:'vs',g:'B',v:'Gillette, BOS'},
+  // GROUP C
+  {utc:'2026-06-13T20:00:00Z',h:'Brazil',      hf:'<img src="https://flagcdn.com/16x12/br.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="br">',a:'Morocco',        af:'<img src="https://flagcdn.com/16x12/ma.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="ma">',s:'F',sc:'1 - 1',g:'C',v:'MetLife, NJ'},
+  {utc:'2026-06-13T23:00:00Z',h:'Scotland',    hf:'<img src="https://flagcdn.com/16x12/gb-sct.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="gb-sct">',a:'Haiti',   af:'<img src="https://flagcdn.com/16x12/ht.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="ht">',s:'F',sc:'1 - 0',g:'C',v:'AT&T Stadium, TX'},
+  {utc:'2026-06-19T22:00:00Z',h:'Scotland',    hf:'<img src="https://flagcdn.com/16x12/gb-sct.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="gb-sct">',a:'Morocco',  af:'<img src="https://flagcdn.com/16x12/ma.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="ma">',s:'S',sc:'vs',g:'C',v:'Gillette, BOS'},
+  {utc:'2026-06-20T01:00:00Z',h:'Brazil',      hf:'<img src="https://flagcdn.com/16x12/br.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="br">',a:'Haiti',          af:'<img src="https://flagcdn.com/16x12/ht.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="ht">',s:'S',sc:'vs',g:'C',v:'Rose Bowl, LA'},
+  {utc:'2026-06-25T00:00:00Z',h:'Morocco',     hf:'<img src="https://flagcdn.com/16x12/ma.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="ma">',a:'Haiti',          af:'<img src="https://flagcdn.com/16x12/ht.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="ht">',s:'S',sc:'vs',g:'C',v:'Hard Rock, MIA'},
+  {utc:'2026-06-25T00:00:00Z',h:'Scotland',    hf:'<img src="https://flagcdn.com/16x12/gb-sct.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="gb-sct">',a:'Brazil',  af:'<img src="https://flagcdn.com/16x12/br.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="br">',s:'S',sc:'vs',g:'C',v:'MetLife, NJ'},
+  // GROUP D
+  {utc:'2026-06-12T23:00:00Z',h:'USA',         hf:'<img src="https://flagcdn.com/16x12/us.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="us">',a:'Paraguay',       af:'<img src="https://flagcdn.com/16x12/py.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="py">',s:'F',sc:'4 - 1',g:'D',v:'SoFi Stadium, LA'},
+  {utc:'2026-06-13T03:00:00Z',h:'Australia',   hf:'<img src="https://flagcdn.com/16x12/au.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="au">',a:'Turkiye',        af:'<img src="https://flagcdn.com/16x12/tr.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="tr">',s:'F',sc:'2 - 0',g:'D',v:'BC Place, VAN'},
+  {utc:'2026-06-19T19:00:00Z',h:'USA',         hf:'<img src="https://flagcdn.com/16x12/us.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="us">',a:'Australia',      af:'<img src="https://flagcdn.com/16x12/au.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="au">',s:'S',sc:'vs',g:'D',v:'Lumen Field, SEA'},
+  {utc:'2026-06-20T04:00:00Z',h:'Turkiye',     hf:'<img src="https://flagcdn.com/16x12/tr.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="tr">',a:'Paraguay',       af:'<img src="https://flagcdn.com/16x12/py.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="py">',s:'S',sc:'vs',g:'D',v:'Arrowhead, KC'},
+  {utc:'2026-06-25T01:00:00Z',h:'Australia',   hf:'<img src="https://flagcdn.com/16x12/au.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="au">',a:'Paraguay',       af:'<img src="https://flagcdn.com/16x12/py.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="py">',s:'S',sc:'vs',g:'D',v:'NRG Stadium, TX'},
+  {utc:'2026-06-25T01:00:00Z',h:'Turkiye',     hf:'<img src="https://flagcdn.com/16x12/tr.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="tr">',a:'USA',            af:'<img src="https://flagcdn.com/16x12/us.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="us">',s:'S',sc:'vs',g:'D',v:'AT&T Stadium, TX'},
+  // GROUP E
+  {utc:'2026-06-14T17:00:00Z',h:'Germany',     hf:'<img src="https://flagcdn.com/16x12/de.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="de">',a:'Curacao',        af:'<img src="https://flagcdn.com/16x12/cw.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="cw">',s:'F',sc:'7 - 1',g:'E',v:'NRG Stadium, TX'},
+  {utc:'2026-06-14T20:00:00Z',h:"Cote d'Ivoire",hf:'<img src="https://flagcdn.com/16x12/ci.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="ci">',a:'Ecuador',      af:'<img src="https://flagcdn.com/16x12/ec.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="ec">',s:'F',sc:'1 - 0',g:'E',v:'Rose Bowl, LA'},
+  {utc:'2026-06-20T20:00:00Z',h:'Germany',     hf:'<img src="https://flagcdn.com/16x12/de.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="de">',a:"Cote d'Ivoire", af:'<img src="https://flagcdn.com/16x12/ci.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="ci">',s:'S',sc:'vs',g:'E',v:'Gillette, BOS'},
+  {utc:'2026-06-21T00:00:00Z',h:'Ecuador',     hf:'<img src="https://flagcdn.com/16x12/ec.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="ec">',a:'Curacao',        af:'<img src="https://flagcdn.com/16x12/cw.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="cw">',s:'S',sc:'vs',g:'E',v:'Arrowhead, KC'},
+  {utc:'2026-06-26T01:00:00Z',h:"Cote d'Ivoire",hf:'<img src="https://flagcdn.com/16x12/ci.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="ci">',a:'Curacao',      af:'<img src="https://flagcdn.com/16x12/cw.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="cw">',s:'S',sc:'vs',g:'E',v:'BC Place, VAN'},
+  {utc:'2026-06-26T01:00:00Z',h:'Ecuador',     hf:'<img src="https://flagcdn.com/16x12/ec.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="ec">',a:'Germany',        af:'<img src="https://flagcdn.com/16x12/de.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="de">',s:'S',sc:'vs',g:'E',v:'MetLife, NJ'},
+  // GROUP F
+  {utc:'2026-06-14T20:00:00Z',h:'Netherlands', hf:'<img src="https://flagcdn.com/16x12/nl.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="nl">',a:'Japan',          af:'<img src="https://flagcdn.com/16x12/jp.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="jp">',s:'F',sc:'2 - 2',g:'F',v:'AT&T Stadium, TX'},
+  {utc:'2026-06-14T23:00:00Z',h:'Sweden',      hf:'<img src="https://flagcdn.com/16x12/se.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="se">',a:'Tunisia',        af:'<img src="https://flagcdn.com/16x12/tn.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="tn">',s:'F',sc:'5 - 1',g:'F',v:'Arrowhead, KC'},
+  {utc:'2026-06-20T17:00:00Z',h:'Netherlands', hf:'<img src="https://flagcdn.com/16x12/nl.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="nl">',a:'Sweden',         af:'<img src="https://flagcdn.com/16x12/se.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="se">',s:'S',sc:'vs',g:'F',v:"Levi's, SF"},
+  {utc:'2026-06-21T04:00:00Z',h:'Tunisia',     hf:'<img src="https://flagcdn.com/16x12/tn.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="tn">',a:'Japan',          af:'<img src="https://flagcdn.com/16x12/jp.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="jp">',s:'S',sc:'vs',g:'F',v:'SoFi Stadium, LA'},
+  {utc:'2026-06-26T01:00:00Z',h:'Japan',       hf:'<img src="https://flagcdn.com/16x12/jp.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="jp">',a:'Sweden',         af:'<img src="https://flagcdn.com/16x12/se.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="se">',s:'S',sc:'vs',g:'F',v:'Rose Bowl, LA'},
+  {utc:'2026-06-26T01:00:00Z',h:'Tunisia',     hf:'<img src="https://flagcdn.com/16x12/tn.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="tn">',a:'Netherlands',    af:'<img src="https://flagcdn.com/16x12/nl.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="nl">',s:'S',sc:'vs',g:'F',v:'Mercedes-Benz, ATL'},
+  // GROUP G
+  {utc:'2026-06-15T19:00:00Z',h:'Belgium',     hf:'<img src="https://flagcdn.com/16x12/be.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="be">',a:'Egypt',          af:'<img src="https://flagcdn.com/16x12/eg.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="eg">',s:'F',sc:'1 - 1',g:'G',v:'Gillette, BOS'},
+  {utc:'2026-06-16T01:00:00Z',h:'Iran',        hf:'<img src="https://flagcdn.com/16x12/ir.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="ir">',a:'New Zealand',    af:'<img src="https://flagcdn.com/16x12/nz.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="nz">',s:'F',sc:'2 - 2',g:'G',v:'Mile High, DEN'},
+  {utc:'2026-06-21T19:00:00Z',h:'Belgium',     hf:'<img src="https://flagcdn.com/16x12/be.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="be">',a:'Iran',           af:'<img src="https://flagcdn.com/16x12/ir.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="ir">',s:'S',sc:'vs',g:'G',v:'SoFi Stadium, LA'},
+  {utc:'2026-06-22T01:00:00Z',h:'New Zealand', hf:'<img src="https://flagcdn.com/16x12/nz.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="nz">',a:'Egypt',          af:'<img src="https://flagcdn.com/16x12/eg.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="eg">',s:'S',sc:'vs',g:'G',v:'BC Place, VAN'},
+  {utc:'2026-06-26T23:00:00Z',h:'Egypt',       hf:'<img src="https://flagcdn.com/16x12/eg.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="eg">',a:'Iran',           af:'<img src="https://flagcdn.com/16x12/ir.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="ir">',s:'S',sc:'vs',g:'G',v:'Lumen Field, SEA'},
+  {utc:'2026-06-26T23:00:00Z',h:'New Zealand', hf:'<img src="https://flagcdn.com/16x12/nz.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="nz">',a:'Belgium',        af:'<img src="https://flagcdn.com/16x12/be.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="be">',s:'S',sc:'vs',g:'G',v:'BC Place, VAN'},
+  // GROUP H
+  {utc:'2026-06-15T19:00:00Z',h:'Spain',       hf:'<img src="https://flagcdn.com/16x12/es.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="es">',a:'Cabo Verde',     af:'<img src="https://flagcdn.com/16x12/cv.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="cv">',s:'F',sc:'0 - 0',g:'H',v:'SoFi Stadium, LA'},
+  {utc:'2026-06-16T01:00:00Z',h:'Saudi Arabia',hf:'<img src="https://flagcdn.com/16x12/sa.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="sa">',a:'Uruguay',        af:'<img src="https://flagcdn.com/16x12/uy.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="uy">',s:'F',sc:'1 - 1',g:'H',v:'Hard Rock, MIA'},
+  {utc:'2026-06-21T16:00:00Z',h:'Spain',       hf:'<img src="https://flagcdn.com/16x12/es.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="es">',a:'Saudi Arabia',   af:'<img src="https://flagcdn.com/16x12/sa.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="sa">',s:'S',sc:'vs',g:'H',v:'Mercedes-Benz, ATL'},
+  {utc:'2026-06-21T22:00:00Z',h:'Uruguay',     hf:'<img src="https://flagcdn.com/16x12/uy.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="uy">',a:'Cabo Verde',     af:'<img src="https://flagcdn.com/16x12/cv.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="cv">',s:'S',sc:'vs',g:'H',v:'Hard Rock, MIA'},
+  {utc:'2026-06-27T00:00:00Z',h:'Cabo Verde',  hf:'<img src="https://flagcdn.com/16x12/cv.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="cv">',a:'Saudi Arabia',   af:'<img src="https://flagcdn.com/16x12/sa.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="sa">',s:'S',sc:'vs',g:'H',v:'NRG Stadium, TX'},
+  {utc:'2026-06-27T00:00:00Z',h:'Uruguay',     hf:'<img src="https://flagcdn.com/16x12/uy.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="uy">',a:'Spain',          af:'<img src="https://flagcdn.com/16x12/es.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="es">',s:'S',sc:'vs',g:'H',v:'Estadio Akron, MEX'},
+  // GROUP I
+  {utc:'2026-06-16T19:00:00Z',h:'France',      hf:'<img src="https://flagcdn.com/16x12/fr.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="fr">',a:'Senegal',        af:'<img src="https://flagcdn.com/16x12/sn.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="sn">',s:'S',sc:'vs',g:'I',v:'MetLife, NJ'},
+  {utc:'2026-06-16T22:00:00Z',h:'Iraq',        hf:'<img src="https://flagcdn.com/16x12/iq.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="iq">',a:'Norway',         af:'<img src="https://flagcdn.com/16x12/no.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="no">',s:'S',sc:'vs',g:'I',v:'Gillette, BOS'},
+  {utc:'2026-06-22T21:00:00Z',h:'France',      hf:'<img src="https://flagcdn.com/16x12/fr.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="fr">',a:'Iraq',           af:'<img src="https://flagcdn.com/16x12/iq.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="iq">',s:'S',sc:'vs',g:'I',v:'Lincoln Financial, PHI'},
+  {utc:'2026-06-23T00:00:00Z',h:'Norway',      hf:'<img src="https://flagcdn.com/16x12/no.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="no">',a:'Senegal',        af:'<img src="https://flagcdn.com/16x12/sn.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="sn">',s:'S',sc:'vs',g:'I',v:'MetLife, NJ'},
+  {utc:'2026-06-26T21:00:00Z',h:'Norway',      hf:'<img src="https://flagcdn.com/16x12/no.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="no">',a:'France',         af:'<img src="https://flagcdn.com/16x12/fr.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="fr">',s:'S',sc:'vs',g:'I',v:'Gillette, BOS'},
+  {utc:'2026-06-26T21:00:00Z',h:'Senegal',     hf:'<img src="https://flagcdn.com/16x12/sn.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="sn">',a:'Iraq',           af:'<img src="https://flagcdn.com/16x12/iq.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="iq">',s:'S',sc:'vs',g:'I',v:'MetLife, NJ'},
+  // GROUP J
+  {utc:'2026-06-17T01:00:00Z',h:'Argentina',   hf:'<img src="https://flagcdn.com/16x12/ar.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="ar">',a:'Algeria',        af:'<img src="https://flagcdn.com/16x12/dz.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="dz">',s:'S',sc:'vs',g:'J',v:'Arrowhead, KC'},
+  {utc:'2026-06-17T04:00:00Z',h:'Austria',     hf:'<img src="https://flagcdn.com/16x12/at.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="at">',a:'Jordan',         af:'<img src="https://flagcdn.com/16x12/jo.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="jo">',s:'S',sc:'vs',g:'J',v:"Levi's, SF"},
+  {utc:'2026-06-22T17:00:00Z',h:'Argentina',   hf:'<img src="https://flagcdn.com/16x12/ar.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="ar">',a:'Austria',        af:'<img src="https://flagcdn.com/16x12/at.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="at">',s:'S',sc:'vs',g:'J',v:'MetLife, NJ'},
+  {utc:'2026-06-22T23:00:00Z',h:'Jordan',      hf:'<img src="https://flagcdn.com/16x12/jo.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="jo">',a:'Algeria',        af:'<img src="https://flagcdn.com/16x12/dz.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="dz">',s:'S',sc:'vs',g:'J',v:'Hard Rock, MIA'},
+  {utc:'2026-06-27T00:00:00Z',h:'Algeria',     hf:'<img src="https://flagcdn.com/16x12/dz.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="dz">',a:'Austria',        af:'<img src="https://flagcdn.com/16x12/at.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="at">',s:'S',sc:'vs',g:'J',v:'Estadio Akron, MEX'},
+  {utc:'2026-06-27T00:00:00Z',h:'Jordan',      hf:'<img src="https://flagcdn.com/16x12/jo.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="jo">',a:'Argentina',      af:'<img src="https://flagcdn.com/16x12/ar.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="ar">',s:'S',sc:'vs',g:'J',v:'Estadio BBVA, MEX'},
+  // GROUP K
+  {utc:'2026-06-17T17:00:00Z',h:'Portugal',    hf:'<img src="https://flagcdn.com/16x12/pt.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="pt">',a:'DR Congo',       af:'<img src="https://flagcdn.com/16x12/cd.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="cd">',s:'S',sc:'vs',g:'K',v:'NRG Stadium, TX'},
+  {utc:'2026-06-18T02:00:00Z',h:'Colombia',    hf:'<img src="https://flagcdn.com/16x12/co.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="co">',a:'Uzbekistan',     af:'<img src="https://flagcdn.com/16x12/uz.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="uz">',s:'S',sc:'vs',g:'K',v:'Lumen Field, SEA'},
+  {utc:'2026-06-23T17:00:00Z',h:'Portugal',    hf:'<img src="https://flagcdn.com/16x12/pt.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="pt">',a:'Uzbekistan',     af:'<img src="https://flagcdn.com/16x12/uz.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="uz">',s:'S',sc:'vs',g:'K',v:'AT&T Stadium, TX'},
+  {utc:'2026-06-23T17:00:00Z',h:'Colombia',    hf:'<img src="https://flagcdn.com/16x12/co.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="co">',a:'DR Congo',       af:'<img src="https://flagcdn.com/16x12/cd.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="cd">',s:'S',sc:'vs',g:'K',v:'Hard Rock, MIA'},
+  {utc:'2026-06-27T05:30:00Z',h:'DR Congo',    hf:'<img src="https://flagcdn.com/16x12/cd.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="cd">',a:'Uzbekistan',     af:'<img src="https://flagcdn.com/16x12/uz.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="uz">',s:'S',sc:'vs',g:'K',v:'BC Place, VAN'},
+  {utc:'2026-06-27T05:30:00Z',h:'Portugal',    hf:'<img src="https://flagcdn.com/16x12/pt.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="pt">',a:'Colombia',       af:'<img src="https://flagcdn.com/16x12/co.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="co">',s:'S',sc:'vs',g:'K',v:'Estadio Azteca, MEX'},
+  // GROUP L
+  {utc:'2026-06-17T20:00:00Z',h:'England',     hf:'<img src="https://flagcdn.com/16x12/gb-eng.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="gb-eng">',a:'Croatia', af:'<img src="https://flagcdn.com/16x12/hr.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="hr">',s:'S',sc:'vs',g:'L',v:'Hard Rock, MIA'},
+  {utc:'2026-06-18T23:00:00Z',h:'Ghana',       hf:'<img src="https://flagcdn.com/16x12/gh.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="gh">',a:'Panama',         af:'<img src="https://flagcdn.com/16x12/pa.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="pa">',s:'S',sc:'vs',g:'L',v:'AT&T Stadium, TX'},
+  {utc:'2026-06-23T20:00:00Z',h:'England',     hf:'<img src="https://flagcdn.com/16x12/gb-eng.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="gb-eng">',a:'Ghana',   af:'<img src="https://flagcdn.com/16x12/gh.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="gh">',s:'S',sc:'vs',g:'L',v:'Levi\'s, SF'},
+  {utc:'2026-06-23T23:00:00Z',h:'Croatia',     hf:'<img src="https://flagcdn.com/16x12/hr.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="hr">',a:'Panama',         af:'<img src="https://flagcdn.com/16x12/pa.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="pa">',s:'S',sc:'vs',g:'L',v:'Rose Bowl, LA'},
+  {utc:'2026-06-27T23:00:00Z',h:'Croatia',     hf:'<img src="https://flagcdn.com/16x12/hr.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="hr">',a:'Ghana',          af:'<img src="https://flagcdn.com/16x12/gh.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="gh">',s:'S',sc:'vs',g:'L',v:'NRG Stadium, TX'},
+  {utc:'2026-06-27T23:00:00Z',h:'Panama',      hf:'<img src="https://flagcdn.com/16x12/pa.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="pa">',a:'England',        af:'<img src="https://flagcdn.com/16x12/gb-eng.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="gb-eng">',s:'S',sc:'vs',g:'L',v:'Arrowhead, KC'},
 ];
 
 // REAL GROUPS -- corrected
 const GROUPS=[
   {name:'A',teams:[
-    {f:'<img src="https://flagcdn.com/20x15/mx.png" width="20" height="15" style="border-radius:2px;display:block;" alt="mx">',n:'Mexico',     p:1,w:1,d:0,l:0,gf:2,ga:0,pts:3},
-    {f:'<img src="https://flagcdn.com/20x15/kr.png" width="20" height="15" style="border-radius:2px;display:block;" alt="kr">',n:'S. Korea',   p:1,w:1,d:0,l:0,gf:2,ga:1,pts:3},
-    {f:'<img src="https://flagcdn.com/20x15/cz.png" width="20" height="15" style="border-radius:2px;display:block;" alt="cz">',n:'Czechia',    p:1,w:0,d:0,l:1,gf:1,ga:2,pts:0},
-    {f:'<img src="https://flagcdn.com/20x15/za.png" width="20" height="15" style="border-radius:2px;display:block;" alt="za">',n:'South Africa',p:1,w:0,d:0,l:1,gf:0,ga:2,pts:0},
+    {f:'<img src="https://flagcdn.com/16x12/mx.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="mx">',n:'Mexico',      p:1,w:1,d:0,l:0,gf:2,ga:0,pts:3},
+    {f:'<img src="https://flagcdn.com/16x12/kr.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="kr">',n:'S. Korea',    p:1,w:1,d:0,l:0,gf:2,ga:1,pts:3},
+    {f:'<img src="https://flagcdn.com/16x12/cz.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="cz">',n:'Czechia',     p:1,w:0,d:0,l:1,gf:1,ga:2,pts:0},
+    {f:'<img src="https://flagcdn.com/16x12/za.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="za">',n:'South Africa',p:1,w:0,d:0,l:1,gf:0,ga:2,pts:0},
   ]},
   {name:'B',teams:[
-    {f:'<img src="https://flagcdn.com/20x15/ch.png" width="20" height="15" style="border-radius:2px;display:block;" alt="ch">',n:'Switzerland', p:1,w:1,d:0,l:0,gf:3,ga:0,pts:3},
-    {f:'<img src="https://flagcdn.com/20x15/ca.png" width="20" height="15" style="border-radius:2px;display:block;" alt="ca">',n:'Canada',      p:1,w:0,d:1,l:0,gf:1,ga:1,pts:1},
-    {f:'<img src="https://flagcdn.com/20x15/ba.png" width="20" height="15" style="border-radius:2px;display:block;" alt="ba">',n:'Bosnia-Herz', p:1,w:0,d:1,l:0,gf:1,ga:1,pts:1},
-    {f:'<img src="https://flagcdn.com/20x15/qa.png" width="20" height="15" style="border-radius:2px;display:block;" alt="qa">',n:'Qatar',       p:1,w:0,d:0,l:1,gf:0,ga:3,pts:0},
+    {f:'<img src="https://flagcdn.com/16x12/ch.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="ch">',n:'Switzerland', p:1,w:1,d:0,l:0,gf:3,ga:0,pts:3},
+    {f:'<img src="https://flagcdn.com/16x12/ca.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="ca">',n:'Canada',      p:1,w:0,d:1,l:0,gf:1,ga:1,pts:1},
+    {f:'<img src="https://flagcdn.com/16x12/ba.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="ba">',n:'Bosnia-Herz', p:1,w:0,d:1,l:0,gf:1,ga:1,pts:1},
+    {f:'<img src="https://flagcdn.com/16x12/qa.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="qa">',n:'Qatar',       p:1,w:0,d:0,l:1,gf:0,ga:3,pts:0},
   ]},
   {name:'C',teams:[
-    {f:'<img src="https://flagcdn.com/20x15/gb-sct.png" width="20" height="15" style="border-radius:2px;display:block;" alt="gb-sct">',n:'Scotland', p:1,w:1,d:0,l:0,gf:1,ga:0,pts:3},
-    {f:'<img src="https://flagcdn.com/20x15/br.png" width="20" height="15" style="border-radius:2px;display:block;" alt="br">',n:'Brazil',      p:1,w:0,d:1,l:0,gf:1,ga:1,pts:1},
-    {f:'<img src="https://flagcdn.com/20x15/ma.png" width="20" height="15" style="border-radius:2px;display:block;" alt="ma">',n:'Morocco',     p:1,w:0,d:1,l:0,gf:1,ga:1,pts:1},
-    {f:'<img src="https://flagcdn.com/20x15/ht.png" width="20" height="15" style="border-radius:2px;display:block;" alt="ht">',n:'Haiti',       p:1,w:0,d:0,l:1,gf:0,ga:1,pts:0},
+    {f:'<img src="https://flagcdn.com/16x12/gb-sct.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="gb-sct">',n:'Scotland', p:1,w:1,d:0,l:0,gf:1,ga:0,pts:3},
+    {f:'<img src="https://flagcdn.com/16x12/br.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="br">',n:'Brazil',      p:1,w:0,d:1,l:0,gf:1,ga:1,pts:1},
+    {f:'<img src="https://flagcdn.com/16x12/ma.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="ma">',n:'Morocco',     p:1,w:0,d:1,l:0,gf:1,ga:1,pts:1},
+    {f:'<img src="https://flagcdn.com/16x12/ht.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="ht">',n:'Haiti',       p:1,w:0,d:0,l:1,gf:0,ga:1,pts:0},
   ]},
   {name:'D',teams:[
-    {f:'<img src="https://flagcdn.com/20x15/us.png" width="20" height="15" style="border-radius:2px;display:block;" alt="us">',n:'USA',         p:1,w:1,d:0,l:0,gf:4,ga:1,pts:3},
-    {f:'<img src="https://flagcdn.com/20x15/au.png" width="20" height="15" style="border-radius:2px;display:block;" alt="au">',n:'Australia',   p:1,w:1,d:0,l:0,gf:2,ga:0,pts:3},
-    {f:'<img src="https://flagcdn.com/20x15/py.png" width="20" height="15" style="border-radius:2px;display:block;" alt="py">',n:'Paraguay',    p:1,w:0,d:0,l:1,gf:1,ga:4,pts:0},
-    {f:'<img src="https://flagcdn.com/20x15/tr.png" width="20" height="15" style="border-radius:2px;display:block;" alt="tr">',n:'Turkiye',     p:1,w:0,d:0,l:1,gf:0,ga:2,pts:0},
+    {f:'<img src="https://flagcdn.com/16x12/us.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="us">',n:'USA',         p:1,w:1,d:0,l:0,gf:4,ga:1,pts:3},
+    {f:'<img src="https://flagcdn.com/16x12/au.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="au">',n:'Australia',   p:1,w:1,d:0,l:0,gf:2,ga:0,pts:3},
+    {f:'<img src="https://flagcdn.com/16x12/py.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="py">',n:'Paraguay',    p:1,w:0,d:0,l:1,gf:1,ga:4,pts:0},
+    {f:'<img src="https://flagcdn.com/16x12/tr.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="tr">',n:'Turkiye',     p:1,w:0,d:0,l:1,gf:0,ga:2,pts:0},
   ]},
   {name:'E',teams:[
-    {f:'<img src="https://flagcdn.com/20x15/de.png" width="20" height="15" style="border-radius:2px;display:block;" alt="de">',n:'Germany',     p:1,w:1,d:0,l:0,gf:7,ga:1,pts:3},
-    {f:'<img src="https://flagcdn.com/20x15/ci.png" width="20" height="15" style="border-radius:2px;display:block;" alt="ci">',n:"Cote d'Ivoire",p:1,w:1,d:0,l:0,gf:1,ga:0,pts:3},
-    {f:'<img src="https://flagcdn.com/20x15/cw.png" width="20" height="15" style="border-radius:2px;display:block;" alt="cw">',n:'Curacao',     p:1,w:0,d:0,l:1,gf:1,ga:7,pts:0},
-    {f:'<img src="https://flagcdn.com/20x15/ec.png" width="20" height="15" style="border-radius:2px;display:block;" alt="ec">',n:'Ecuador',     p:1,w:0,d:0,l:1,gf:0,ga:1,pts:0},
+    {f:'<img src="https://flagcdn.com/16x12/de.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="de">',n:'Germany',       p:1,w:1,d:0,l:0,gf:7,ga:1,pts:3},
+    {f:'<img src="https://flagcdn.com/16x12/ci.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="ci">',n:"Cote d'Ivoire", p:1,w:1,d:0,l:0,gf:1,ga:0,pts:3},
+    {f:'<img src="https://flagcdn.com/16x12/cw.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="cw">',n:'Curacao',       p:1,w:0,d:0,l:1,gf:1,ga:7,pts:0},
+    {f:'<img src="https://flagcdn.com/16x12/ec.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="ec">',n:'Ecuador',       p:1,w:0,d:0,l:1,gf:0,ga:1,pts:0},
   ]},
   {name:'F',teams:[
-    {f:'<img src="https://flagcdn.com/20x15/se.png" width="20" height="15" style="border-radius:2px;display:block;" alt="se">',n:'Sweden',      p:1,w:1,d:0,l:0,gf:5,ga:1,pts:3},
-    {f:'<img src="https://flagcdn.com/20x15/nl.png" width="20" height="15" style="border-radius:2px;display:block;" alt="nl">',n:'Netherlands', p:1,w:0,d:1,l:0,gf:2,ga:2,pts:1},
-    {f:'<img src="https://flagcdn.com/20x15/jp.png" width="20" height="15" style="border-radius:2px;display:block;" alt="jp">',n:'Japan',       p:1,w:0,d:1,l:0,gf:2,ga:2,pts:1},
-    {f:'<img src="https://flagcdn.com/20x15/tn.png" width="20" height="15" style="border-radius:2px;display:block;" alt="tn">',n:'Tunisia',     p:1,w:0,d:0,l:1,gf:1,ga:5,pts:0},
+    {f:'<img src="https://flagcdn.com/16x12/se.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="se">',n:'Sweden',      p:1,w:1,d:0,l:0,gf:5,ga:1,pts:3},
+    {f:'<img src="https://flagcdn.com/16x12/nl.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="nl">',n:'Netherlands', p:1,w:0,d:1,l:0,gf:2,ga:2,pts:1},
+    {f:'<img src="https://flagcdn.com/16x12/jp.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="jp">',n:'Japan',       p:1,w:0,d:1,l:0,gf:2,ga:2,pts:1},
+    {f:'<img src="https://flagcdn.com/16x12/tn.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="tn">',n:'Tunisia',     p:1,w:0,d:0,l:1,gf:1,ga:5,pts:0},
   ]},
   {name:'G',teams:[
-    {f:'<img src="https://flagcdn.com/20x15/be.png" width="20" height="15" style="border-radius:2px;display:block;" alt="be">',n:'Belgium',     p:0,w:0,d:0,l:0,gf:0,ga:0,pts:0},
-    {f:'<img src="https://flagcdn.com/20x15/ir.png" width="20" height="15" style="border-radius:2px;display:block;" alt="ir">',n:'Iran',        p:0,w:0,d:0,l:0,gf:0,ga:0,pts:0},
-    {f:'<img src="https://flagcdn.com/20x15/eg.png" width="20" height="15" style="border-radius:2px;display:block;" alt="eg">',n:'Egypt',       p:0,w:0,d:0,l:0,gf:0,ga:0,pts:0},
-    {f:'<img src="https://flagcdn.com/20x15/nz.png" width="20" height="15" style="border-radius:2px;display:block;" alt="nz">',n:'New Zealand', p:0,w:0,d:0,l:0,gf:0,ga:0,pts:0},
+    {f:'<img src="https://flagcdn.com/16x12/be.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="be">',n:'Belgium',     p:1,w:0,d:1,l:0,gf:1,ga:1,pts:1},
+    {f:'<img src="https://flagcdn.com/16x12/ir.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="ir">',n:'Iran',        p:1,w:0,d:1,l:0,gf:2,ga:2,pts:1},
+    {f:'<img src="https://flagcdn.com/16x12/eg.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="eg">',n:'Egypt',       p:1,w:0,d:1,l:0,gf:1,ga:1,pts:1},
+    {f:'<img src="https://flagcdn.com/16x12/nz.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="nz">',n:'New Zealand', p:1,w:0,d:1,l:0,gf:2,ga:2,pts:1},
   ]},
   {name:'H',teams:[
-    {f:'<img src="https://flagcdn.com/20x15/es.png" width="20" height="15" style="border-radius:2px;display:block;" alt="es">',n:'Spain',       p:0,w:0,d:0,l:0,gf:0,ga:0,pts:0},
-    {f:'<img src="https://flagcdn.com/20x15/sa.png" width="20" height="15" style="border-radius:2px;display:block;" alt="sa">',n:'Saudi Arabia',p:0,w:0,d:0,l:0,gf:0,ga:0,pts:0},
-    {f:'<img src="https://flagcdn.com/20x15/uy.png" width="20" height="15" style="border-radius:2px;display:block;" alt="uy">',n:'Uruguay',     p:0,w:0,d:0,l:0,gf:0,ga:0,pts:0},
-    {f:'<img src="https://flagcdn.com/20x15/cv.png" width="20" height="15" style="border-radius:2px;display:block;" alt="cv">',n:'Cabo Verde',  p:0,w:0,d:0,l:0,gf:0,ga:0,pts:0},
+    {f:'<img src="https://flagcdn.com/16x12/sa.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="sa">',n:'Saudi Arabia',p:1,w:0,d:1,l:0,gf:1,ga:1,pts:1},
+    {f:'<img src="https://flagcdn.com/16x12/uy.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="uy">',n:'Uruguay',     p:1,w:0,d:1,l:0,gf:1,ga:1,pts:1},
+    {f:'<img src="https://flagcdn.com/16x12/es.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="es">',n:'Spain',       p:1,w:0,d:1,l:0,gf:0,ga:0,pts:1},
+    {f:'<img src="https://flagcdn.com/16x12/cv.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="cv">',n:'Cabo Verde',  p:1,w:0,d:1,l:0,gf:0,ga:0,pts:1},
   ]},
   {name:'I',teams:[
-    {f:'<img src="https://flagcdn.com/20x15/fr.png" width="20" height="15" style="border-radius:2px;display:block;" alt="fr">',n:'France',      p:0,w:0,d:0,l:0,gf:0,ga:0,pts:0},
-    {f:'<img src="https://flagcdn.com/20x15/sn.png" width="20" height="15" style="border-radius:2px;display:block;" alt="sn">',n:'Senegal',     p:0,w:0,d:0,l:0,gf:0,ga:0,pts:0},
-    {f:'<img src="https://flagcdn.com/20x15/no.png" width="20" height="15" style="border-radius:2px;display:block;" alt="no">',n:'Norway',      p:0,w:0,d:0,l:0,gf:0,ga:0,pts:0},
-    {f:'<img src="https://flagcdn.com/20x15/iq.png" width="20" height="15" style="border-radius:2px;display:block;" alt="iq">',n:'Iraq',        p:0,w:0,d:0,l:0,gf:0,ga:0,pts:0},
+    {f:'<img src="https://flagcdn.com/16x12/fr.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="fr">',n:'France',      p:0,w:0,d:0,l:0,gf:0,ga:0,pts:0},
+    {f:'<img src="https://flagcdn.com/16x12/sn.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="sn">',n:'Senegal',     p:0,w:0,d:0,l:0,gf:0,ga:0,pts:0},
+    {f:'<img src="https://flagcdn.com/16x12/no.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="no">',n:'Norway',      p:0,w:0,d:0,l:0,gf:0,ga:0,pts:0},
+    {f:'<img src="https://flagcdn.com/16x12/iq.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="iq">',n:'Iraq',        p:0,w:0,d:0,l:0,gf:0,ga:0,pts:0},
   ]},
   {name:'J',teams:[
-    {f:'<img src="https://flagcdn.com/20x15/ar.png" width="20" height="15" style="border-radius:2px;display:block;" alt="ar">',n:'Argentina',   p:0,w:0,d:0,l:0,gf:0,ga:0,pts:0},
-    {f:'<img src="https://flagcdn.com/20x15/dz.png" width="20" height="15" style="border-radius:2px;display:block;" alt="dz">',n:'Algeria',     p:0,w:0,d:0,l:0,gf:0,ga:0,pts:0},
-    {f:'<img src="https://flagcdn.com/20x15/at.png" width="20" height="15" style="border-radius:2px;display:block;" alt="at">',n:'Austria',     p:0,w:0,d:0,l:0,gf:0,ga:0,pts:0},
-    {f:'<img src="https://flagcdn.com/20x15/jo.png" width="20" height="15" style="border-radius:2px;display:block;" alt="jo">',n:'Jordan',      p:0,w:0,d:0,l:0,gf:0,ga:0,pts:0},
+    {f:'<img src="https://flagcdn.com/16x12/ar.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="ar">',n:'Argentina',   p:0,w:0,d:0,l:0,gf:0,ga:0,pts:0},
+    {f:'<img src="https://flagcdn.com/16x12/dz.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="dz">',n:'Algeria',     p:0,w:0,d:0,l:0,gf:0,ga:0,pts:0},
+    {f:'<img src="https://flagcdn.com/16x12/at.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="at">',n:'Austria',     p:0,w:0,d:0,l:0,gf:0,ga:0,pts:0},
+    {f:'<img src="https://flagcdn.com/16x12/jo.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="jo">',n:'Jordan',      p:0,w:0,d:0,l:0,gf:0,ga:0,pts:0},
   ]},
   {name:'K',teams:[
-    {f:'<img src="https://flagcdn.com/20x15/pt.png" width="20" height="15" style="border-radius:2px;display:block;" alt="pt">',n:'Portugal',    p:0,w:0,d:0,l:0,gf:0,ga:0,pts:0},
-    {f:'<img src="https://flagcdn.com/20x15/co.png" width="20" height="15" style="border-radius:2px;display:block;" alt="co">',n:'Colombia',    p:0,w:0,d:0,l:0,gf:0,ga:0,pts:0},
-    {f:'<img src="https://flagcdn.com/20x15/cd.png" width="20" height="15" style="border-radius:2px;display:block;" alt="cd">',n:'DR Congo',    p:0,w:0,d:0,l:0,gf:0,ga:0,pts:0},
-    {f:'<img src="https://flagcdn.com/20x15/uz.png" width="20" height="15" style="border-radius:2px;display:block;" alt="uz">',n:'Uzbekistan',  p:0,w:0,d:0,l:0,gf:0,ga:0,pts:0},
+    {f:'<img src="https://flagcdn.com/16x12/pt.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="pt">',n:'Portugal',    p:0,w:0,d:0,l:0,gf:0,ga:0,pts:0},
+    {f:'<img src="https://flagcdn.com/16x12/co.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="co">',n:'Colombia',    p:0,w:0,d:0,l:0,gf:0,ga:0,pts:0},
+    {f:'<img src="https://flagcdn.com/16x12/cd.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="cd">',n:'DR Congo',    p:0,w:0,d:0,l:0,gf:0,ga:0,pts:0},
+    {f:'<img src="https://flagcdn.com/16x12/uz.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="uz">',n:'Uzbekistan',  p:0,w:0,d:0,l:0,gf:0,ga:0,pts:0},
   ]},
   {name:'L',teams:[
-    {f:'<img src="https://flagcdn.com/20x15/gb-eng.png" width="20" height="15" style="border-radius:2px;display:block;" alt="gb-eng">',n:'England',  p:0,w:0,d:0,l:0,gf:0,ga:0,pts:0},
-    {f:'<img src="https://flagcdn.com/20x15/hr.png" width="20" height="15" style="border-radius:2px;display:block;" alt="hr">',n:'Croatia',     p:0,w:0,d:0,l:0,gf:0,ga:0,pts:0},
-    {f:'<img src="https://flagcdn.com/20x15/gh.png" width="20" height="15" style="border-radius:2px;display:block;" alt="gh">',n:'Ghana',       p:0,w:0,d:0,l:0,gf:0,ga:0,pts:0},
-    {f:'<img src="https://flagcdn.com/20x15/pa.png" width="20" height="15" style="border-radius:2px;display:block;" alt="pa">',n:'Panama',      p:0,w:0,d:0,l:0,gf:0,ga:0,pts:0},
+    {f:'<img src="https://flagcdn.com/16x12/gb-eng.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="gb-eng">',n:'England',  p:0,w:0,d:0,l:0,gf:0,ga:0,pts:0},
+    {f:'<img src="https://flagcdn.com/16x12/hr.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="hr">',n:'Croatia',     p:0,w:0,d:0,l:0,gf:0,ga:0,pts:0},
+    {f:'<img src="https://flagcdn.com/16x12/gh.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="gh">',n:'Ghana',       p:0,w:0,d:0,l:0,gf:0,ga:0,pts:0},
+    {f:'<img src="https://flagcdn.com/16x12/pa.png" width="16" height="12" style="border-radius:2px;vertical-align:middle;display:block" alt="pa">',n:'Panama',      p:0,w:0,d:0,l:0,gf:0,ga:0,pts:0},
   ]},
 ];
 
-// Leaderboard -- from screenshot
-const LB=[
-  {n:'4money_Mtawarira', res:1,  cl:1.5, ex:12, pts:14.5},
-  {n:'Goose',            res:4,  cl:3,   ex:6,  pts:13.0},
-  {n:'MacSteef',         res:2,  cl:4.5, ex:6,  pts:12.5},
-  {n:'johanandre swart', res:3,  cl:3,   ex:6,  pts:12.0},
-  {n:'Abdul Ncube',      res:2,  cl:3,   ex:6,  pts:11.0},
-  {n:'Johnny South',     res:4,  cl:6,   ex:0,  pts:10.0},
-  {n:'Grant',            res:1,  cl:6,   ex:3,  pts:10.0},
-  {n:'Ki1307',           res:4,  cl:0,   ex:6,  pts:10.0},
-  {n:"It'sComingHome",   res:1,  cl:3,   ex:6,  pts:10.0},
-  {n:'Fnuiker',          res:2,  cl:4.5, ex:3,  pts:9.5},
-  {n:'Khaya',            res:2,  cl:1.5, ex:6,  pts:9.5},
-  {n:'Visser',           res:2,  cl:6,   ex:0,  pts:8.0},
-  {n:'Grobies',          res:2,  cl:3,   ex:3,  pts:8.0},
-  {n:'Wander',           res:2,  cl:0,   ex:6,  pts:8.0},
-  {n:'HurriKane',        res:2,  cl:0,   ex:6,  pts:8.0},
-  {n:'AvengeAll',        res:3,  cl:4.5, ex:0,  pts:7.5},
-  {n:'jojo',             res:3,  cl:1.5, ex:3,  pts:7.5},
-];
+// FM Office Pool leaderboard - sourced from Google Apps Script Web App (JSON, CORS-enabled)
+const POOL_API_URL='https://script.google.com/macros/s/AKfycbyfLOfWa_ZTZAqvCr5qpbPvLTQf1aecnZ6rtSsCij5xJGJ7L0d0FgC9nR0-urDaYnzMPw/exec';
+let POOL_LB=[];
+
+async function fetchPoolLeaderboard(){
+  try{
+    const r=await fetch(POOL_API_URL+'?_='+Date.now(),{signal:AbortSignal.timeout(8000)});
+    if(!r.ok)throw new Error('HTTP '+r.status);
+    const rows=await r.json();
+    POOL_LB=rows.map(row=>{
+      // normalize keys: trim whitespace, case-insensitive match
+      const norm={};
+      Object.keys(row).forEach(k=>norm[k.trim().toLowerCase()]=row[k]);
+      return {
+        rank:parseInt(norm['rank'])||0,
+        name:(norm['player']||'').toString().trim(),
+        code:(norm['teamcode']||'').toString().trim().toLowerCase(),
+        pts:parseFloat(norm['points'])||0
+      };
+    }).filter(r=>r.name);
+    setStatus('ok','Pool: live');
+  }catch(e){
+    setStatus('','Pool: cached');
+  }
+}
 
 function toSAST(utcStr){
   const d=new Date(utcStr);
@@ -378,22 +416,26 @@ function renderResults(){
   document.getElementById('res-list').innerHTML=h||'<div style="padding:16px;color:var(--muted);font-size:11px;text-align:center">No results yet</div>';
 }
 
-function renderLB(){
-  let h='';
-  LB.forEach((e,i)=>{
-    const r=i+1;
+function flagImg(code,w=16,h=12){
+  if(!code||code==='neutral')return '<span style="font-size:11px;display:block;text-align:center;line-height:1.2">⚪</span>';
+  return `<img src="https://flagcdn.com/${w}x${h}/${code}.png" width="${w}" height="${h}" alt="${code}" onerror="this.parentElement.innerHTML='<span style=&quot;font-size:9px;color:#999&quot;>?</span>'">`;
+}
+
+function renderPoolLB(){
+  let h='<div class="lb-wrap">';
+  POOL_LB.forEach((e,i)=>{
+    const r=e.rank||(i+1);
     const rc=r===1?'g':r===2?'s':r===3?'b':'';
     const ri=r===1?'&#9733;':r;
     h+=`<div class="lb${r===1?' top1':''}">
       <div class="lb-rank ${rc}">${ri}</div>
-      <div class="lb-name">${e.n}</div>
-      <div class="lb-cell">${e.res}</div>
-      <div class="lb-cell">${e.cl}</div>
-      <div class="lb-cell">${e.ex}</div>
-      <div class="lb-pts-cell">${e.pts}</div>
+      <div class="lb-flag">${flagImg(e.code)}</div>
+      <div class="lb-name">${e.name}</div>
+      <div class="lb-pts-cell">${e.pts.toFixed(2)}</div>
     </div>`;
   });
-  document.getElementById('lb-list').innerHTML=h;
+  h+='</div>';
+  document.getElementById('pool-lb-list').innerHTML=POOL_LB.length?h:'<div style="padding:16px;color:rgba(255,255,255,0.85);font-size:11px;text-align:center">Loading pool standings...</div>';
 }
 
 function tick(){
@@ -402,16 +444,76 @@ function tick(){
 }
 setInterval(tick,1000);tick();
 
+const API_KEY='8a12f98ca9ab433493cb47a77d58afe9';
+
+// Map API team names to our names
+const TEAM_MAP={
+  'Mexico':'Mexico','South Africa':'South Africa','South Korea':'South Korea','Czech Republic':'Czechia',
+  'Canada':'Canada','Bosnia-Herzegovina':'Bosnia-Herz','Qatar':'Qatar','Switzerland':'Switzerland',
+  'Brazil':'Brazil','Morocco':'Morocco','Haiti':'Haiti','Scotland':'Scotland',
+  'USA':'USA','United States':'USA','Paraguay':'Paraguay','Australia':'Australia','Turkey':'Turkiye',
+  'Germany':'Germany','Ivory Coast':"Cote d'Ivoire","Côte d'Ivoire":"Cote d'Ivoire",'Ecuador':'Ecuador','Curaçao':'Curacao',
+  'Netherlands':'Netherlands','Japan':'Japan','Sweden':'Sweden','Tunisia':'Tunisia',
+  'Belgium':'Belgium','Egypt':'Egypt','Iran':'Iran','New Zealand':'New Zealand',
+  'Spain':'Spain','Cabo Verde':'Cabo Verde','Saudi Arabia':'Saudi Arabia','Uruguay':'Uruguay',
+  'France':'France','Senegal':'Senegal','Iraq':'Iraq','Norway':'Norway',
+  'Argentina':'Argentina','Algeria':'Algeria','Austria':'Austria','Jordan':'Jordan',
+  'Portugal':'Portugal','DR Congo':'DR Congo','Colombia':'Colombia','Uzbekistan':'Uzbekistan',
+  'England':'England','Croatia':'Croatia','Ghana':'Ghana','Panama':'Panama',
+};
+
+function mapTeam(n){return TEAM_MAP[n]||n;}
+
 async function tryAPI(){
   try{
-    const r=await fetch('https://worldcup26.ir/get/games',{signal:AbortSignal.timeout(5000)});
-    if(!r.ok)throw new Error();
+    const r=await fetch(
+      'https://api.football-data.org/v4/competitions/WC/matches?season=2026',
+      {headers:{'X-Auth-Token':API_KEY},signal:AbortSignal.timeout(8000)}
+    );
+    if(!r.ok)throw new Error('HTTP '+r.status);
     const data=await r.json();
-    if(Array.isArray(data)&&data.length>0){
-      // update statuses if API returns live/finished
-      setStatus('ok','Live data active');
-    }
-  }catch(e){setStatus('','Cached data');}
+    if(!data.matches||!data.matches.length)throw new Error('no matches');
+
+    data.matches.forEach(m=>{
+      const home=mapTeam(m.homeTeam.name);
+      const away=mapTeam(m.awayTeam.name);
+      const idx=FIXTURES.findIndex(f=>f.h===home&&f.a===away);
+      if(idx<0)return;
+      const st=m.status;
+      if(st==='FINISHED'){
+        FIXTURES[idx].s='F';
+        FIXTURES[idx].sc=`${m.score.fullTime.home} - ${m.score.fullTime.away}`;
+      } else if(st==='IN_PLAY'||st==='PAUSED'||st==='HALFTIME'){
+        FIXTURES[idx].s='L';
+        FIXTURES[idx].sc=`${m.score.fullTime.home??0} - ${m.score.fullTime.away??0}`;
+      } else {
+        FIXTURES[idx].s='S';
+      }
+    });
+
+    // Rebuild group standings from live data
+    GROUPS.forEach(g=>{
+      g.teams.forEach(t=>{t.p=0;t.w=0;t.d=0;t.l=0;t.gf=0;t.ga=0;t.pts=0;});
+    });
+    data.matches.filter(m=>m.status==='FINISHED').forEach(m=>{
+      const home=mapTeam(m.homeTeam.name);
+      const away=mapTeam(m.awayTeam.name);
+      const hg=m.score.fullTime.home, ag=m.score.fullTime.away;
+      GROUPS.forEach(g=>{
+        const ht=g.teams.find(t=>t.n===home);
+        const at=g.teams.find(t=>t.n===away);
+        if(!ht||!at)return;
+        ht.p++;at.p++;ht.gf+=hg;ht.ga+=ag;at.gf+=ag;at.ga+=hg;
+        if(hg>ag){ht.w++;ht.pts+=3;at.l++;}
+        else if(hg<ag){at.w++;at.pts+=3;ht.l++;}
+        else{ht.d++;ht.pts+=1;at.d++;at.pts+=1;}
+      });
+    });
+
+    setStatus('ok','football-data.org: live');
+  }catch(e){
+    setStatus('','Cached data: '+e.message);
+  }
 }
 
 function setStatus(c,m){
@@ -429,7 +531,8 @@ function startBar(){
 }
 async function refresh(){
   await tryAPI();
-  renderFixtures();renderResults();renderGroups();
+  await fetchPoolLeaderboard();
+  renderFixtures();renderResults();renderGroups();renderPoolLB();
   setLastUpd();startBar();
 }
 refresh();
